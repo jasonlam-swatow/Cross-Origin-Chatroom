@@ -19,17 +19,15 @@
 兩個頁面必須部署於Web伺服器上，並來自不同的域。可將它們部署於不同域的多個Web伺服器（eg: 兩臺Apache HTTP伺服器），再運行之。
 要在本機部署運行應用，需要使用Python的SimpleHTTPServer Web伺服器，步驟如下：
 1.  更新hosts文件（Windows系統：`C:\Windows\system32\drivers\etc\hosts`；Linux系統：`/etc/hosts`），增加兩條指向`localhost`（IP爲`127.0.0.1`）的記錄：
-
     127.0.0.1  chat.example.net
     127.0.0.1  portal.example.com
 2.  安裝Python，其中包括SimpleHTTPServer。
 3. 打開項目目錄。
 4. 啓動Web伺服器：
-
     python -m SimpleHTTPServer 9999
 5.  在瀏覽器前往`http://portal.example.com:9999/postMessagePortal.html`，就能使用這個Web應用喇。
 ***
 ## Troubleshooting
 ***
-若應用運行不成功或不符預期，請檢查是否開啓SimpleHTTPServer伺服器（開啓成功時終端會顯示`Serving HTTP on 0.0.0.0 port 9999 ...`）。
-若頁面顯示亂碼，請設置瀏覽器的字元編碼爲`Unicode`。
+1. 若應用運行不成功或不符預期，請檢查是否開啓SimpleHTTPServer伺服器（開啓成功時終端會顯示`Serving HTTP on 0.0.0.0 port 9999 ...`）。
+2. 若頁面顯示亂碼，請設置瀏覽器的字元編碼爲`Unicode`。
