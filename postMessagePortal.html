@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<title>門戶 [htpp://portal.example.com:9999]</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/postMessagePortal.js"></script>
+
+<h1>跨源通信</h1>
+<p><b>源</b>: http://portal.example.com:9999</p>
+狀態 <input type="text" id="statusText" value="在線" />
+<button id="sendButton">變動狀態</button>
+<p>
+	這個門戶頁面使用postMessage API來發送狀態，進而更新iframe聊天部件。可更新用戶狀態爲「在線」、「忙碌」等。
+</p>
+<iframe id="widget" src="http://chat.example.net:9999/postMessageWidget.html"></iframe>
+<p>
+	<button id="stopButton">停止閃爍</button>
+</p>

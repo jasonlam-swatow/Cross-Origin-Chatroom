@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<title>Widget</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/postMessageWidget.js"></script>
+
+<h1>聊天部件</h1>
+<p><b>源</b>: http://chat.example.com:9999</p>
+<p>門戶頁面所設定的狀態爲：<strong id="status"></strong></p>
+
+<div>
+	<input type="text" id="messageText" value="幹嘛呵呵去洗澡" />
+	<button id="actionButton">發消息</button>
+</div>
+
+<p>
+	此聊天部件將在有新消息（來自信賴源）時通知門戶頁面，後者通過閃爍窗口標題來提示用戶。
+</p>

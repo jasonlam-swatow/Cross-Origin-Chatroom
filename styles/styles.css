@@ -1,0 +1,21 @@
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #000;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h1 {
+	color: SteelBlue;
+	font-size: 175%;
+	padding-bottom: 5px;
+	margin: 5px 0 5px 0;
+}
+
+#widget {
+	height: 400px;
+	width: 800px;
+}
