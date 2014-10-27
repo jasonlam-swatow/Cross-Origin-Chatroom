@@ -28,4 +28,8 @@
    亦可直接運行`start-server.sh`腳本文件。
 5. 在瀏覽器前往`http://portal.example.com:9999/postMessagePortal.html`，就能使用這個Web應用喇。
 
-
+***
+## Troubleshooting
+***
+1. 若應用運行不成功或不符預期，請檢查是否開啓SimpleHTTPServer伺服器（開啓成功時終端會顯示`Serving HTTP on 0.0.0.0 port 9999 ...`）。
+2. 若頁面顯示亂碼，請設置瀏覽器的字元編碼爲`Unicode`。
