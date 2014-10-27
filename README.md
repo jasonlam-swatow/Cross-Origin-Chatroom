@@ -3,11 +3,12 @@
 
 # 使用postMessage API的跨源聊天網站
 ***
-> 這個網站項目集合了HTML5通信規範中兩個新元素——`postMessage` API和源安全。它利用跨文檔消息通信（Cross Document Messaging）來實現門戶頁面和聊天部件之間的交互。
+這個網站項目集合了HTML5通信規範中兩個新元素——`postMessage` API和源安全。它利用跨文檔消息通信（Cross Document Messaging）來實現門戶頁面和聊天部件之間的交互。
 ***
 ## Overview
 ***
 包含兩個HTML文件：`postMessagePortal.html`爲門戶頁面，`postMessageWidget.html`爲嵌在前者中的iframe部件。兩者不同源，故通過`postMessage`來跨源通信，並使用了源安全概念來篩選消息。
+
 工作流程爲：
 1.  兩者均設置對方的源爲信賴源，只接收該源發出的消息並作出處理。
 2.  父窗口能改變用戶狀態，並通知iframe部件，後者作出響應。
